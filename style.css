@@ -1,30 +1,30 @@
-*{
+* {
     font-family: 'Inconsolata', monospace;
     color: #555;
 }
 body {
     background-color: #3fb399;
 }
-.container{
+.container {
     width: 320px;
     background-color: white;
     margin: 120px auto;
 }
-table{
+table {
     width: 100%;
     border-color: #f4f4f4;
 }
 td {
     width: 25%;
 }
-button{
+button {
     width: 100%;
     height: 70px;
     font-size: 24px;
     background-color: white;
     border: none;
 }
-#inputLabel{
+#inputLabel {
     height: 120px;
     font-size: 40px;
     vertical-align: bottom;
@@ -32,4 +32,3 @@ button{
     padding-right: 16px;
     background-color: #ececec;
 }
-
