@@ -5,7 +5,7 @@
         <title>Simple Calculator</title>
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="style.css">
-       <!--<script src="script.js"></script>-->
+       
         <body>
             <div class="container">
                 <table border="1" cellspacing="0">
@@ -42,28 +42,29 @@
                 </table>
             </div>  
             <script>
-                var inputLabel = document.getElementById('inputLabel');
-
-function  pushBtn(obj){
-    var pushed = obj.innerHTML;
-
-    if (pushed == '=') {
-        // Calculate
-        inputLabel.innerHTML = eval(inputLabel.innerHTML);
-    }
-    else if(pushed == 'AC'){
-        //Clear all
-        inputLabel.innerHTML = '0';
-    }
-    else {
-        if (inputLabel.innerHTML = '0') {
-            inputLabel.innerHTML = pushed;
-        }
-    }
-    else{
-        inputLabel.innerHTML +=pushed;
-    }
-}
+              var inputLabel = document.getElementById('inputLabel');
+     
+     function pushBtn(obj) {
+          
+         var pushed = obj.innerHTML;
+          
+         if (pushed == '=') {
+             // Calculate
+             inputLabel.innerHTML = eval(inputLabel.innerHTML);
+              
+         } else if (pushed == 'AC') {
+             // All Clear
+             inputLabel.innerHTML = '0';
+              
+         } else {
+             if (inputLabel.innerHTML == '0') {
+                 inputLabel.innerHTML = pushed;
+                  
+             } else {
+                 inputLabel.innerHTML += pushed;   
+             }
+         }
+     }
             </script>        
         </body>
     </head>
